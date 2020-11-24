@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif;
+}
+
+.form a {
+    text-decoration: none !important;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section {
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 2cm;
+    flex-direction: column;
+    animation-name: left-section;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.right-section {
+    flex: 1;
+    transition: 0.5s;
+    background-image: url(movie.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header>h1 {
+    margin: 0;
+    color: black;
+}
+
+.header>h4 {
+    margin-top: 10px;
+    color: red;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form>p {
+    text-align: right;
+}
+
+.form>p>a {
+    color: black;
+    font-size: 14px;
+}
+
+.form-field {
+    height: 46px;
+    padding: 0px 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.form-field:focus {
+    border-color: blue;
+}
+
+.form>button {
+    padding: 12px 10px;
+    border: 0;
+    background: liner-gradient(to right, red 0%, yellow 100%);
+    border-radius: 3px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
